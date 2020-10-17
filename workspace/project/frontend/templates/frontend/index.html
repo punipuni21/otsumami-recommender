@@ -5,21 +5,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'frontend/construct/materialize/css/materialize.css' %}" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+  <link rel="stylesheet" href="{% static 'frontend/construct/mystyle.css' %}">
+
   <title>hello!</title>
 </head>
 
 <body>
-  <section class="section">
-    <div class="container">
-      <div id="app" class="columns">
-        <!-- React -->
-      </div>
+  <nav class="brown" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Recommender</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">top</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">top</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-  </section>
+  </nav>
+  <div class="back bgmask">
+    <section class="section">
+      <div class="container">
+        <div id="app">
+          <!-- React -->
+        </div>
+      </div>
+    </section>
+
+
+    <div id="howto" class="howtouse">
+      nya
+
+    </div>
+  </div>
 
 
   <script src="{% static 'frontend/main.js' %}"></script>
+  <script type="text/javascript" src="{% static 'frontend/construct/materialize/js/materialize.min.js"></script>
+
 </body>
 
 </html>

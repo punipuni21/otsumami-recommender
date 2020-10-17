@@ -1,0 +1,58 @@
+h1{
+    font-size:calc(90% + 5vw);
+}
+
+.head{
+    font-size:calc(30% + 1vw);
+}
+
+
+.brown{
+    background-color:#432f2f;
+}
+
+.brownfont{
+    color:#432f2f;
+}
+
+.back{
+    background-image:url("../img/top/front1.jpg");
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-color: white;
+    height:1280px;
+}
+
+.bgmask{
+    background-color:rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+}
+
+.catchblock{
+    text-align:center;
+    display: table;
+    width: 100%;
+    position:relative;
+}
+
+.catch{
+    text-align:center;
+    margin-top:calc(5% + 2vw);
+    margin-bottom: 100px;
+    vertical-align:middle;
+    width: 80%;
+}
+
+.title_sentence{
+    font-size:calc(80% + 1vw);
+}
+
+.howtouse{
+    background-color: rgba(87, 47, 47, 0.85);
+    background-blend-mode: lighten;
+    margin-top:200px;
+    padding:20px;
+}
+
