@@ -18,4 +18,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('', include('frontend.urls')),
+    path('submit', include('frontend.urls')),
+    path('quiz', include('frontend.urls')),
+    path('photo', include('frontend.urls')),
+    path('result', include('frontend.urls'))
 ]
