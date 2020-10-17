@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'frontend/construct/materialize/css/materialize.css' %}" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+  <link rel="stylesheet" href="{% static 'frontend/construct/mystyle.css' %}">
+
+  <title>hello!</title>
+</head>
+
+<body>
+  <nav class="brown darken-3" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo fix">Recommender</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">photo</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">top</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="back bgmask">
+    <section class="section">
+      <div class="container">
+        <div id="app">
+          <!-- React -->
+        </div>
+      </div>
+    </section>
+
+    <p id="pageTop">
+      <a href="#">
+        <i class="fas fa-arrow-up"></i><br />
+        Top
+      </a>
+    </p>
+
+
+    <div id="howto" class="howtouse">
+      <h1>HOW TO USE</h1>
+      <h2>使い方</h2>
+      <ul class="demo">
+        <li>①お酒の写真を撮って…… <br />
+          <img src="{% static 'frontend/img/top/demo.png' %}" /></li>
+        <li>②n問の質問に答えるだけ！<br />
+          <img src=" {% static 'frontend/img/top/quest.png' %}" /></li>
+      </ul>
+      <br />
+
+    </div>
+  </div>
+  <footer>
+    <a href="#">
+      <p class="brown-text text-darken-3">©️otsumami recomender</p>
+    </a>
+  </footer>
+
+
+  <script src="{% static 'frontend/main.js' %}"></script>
+  <script src="{% static 'frontend/construct/materialize/js/materialize.min.js' %}"></script>
+  <script src="{% static 'frontend/construct/mystyle.js' %}"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a4e775296c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
