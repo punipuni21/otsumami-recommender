@@ -21,5 +21,8 @@ urlpatterns = [
     path('submit', include('frontend.urls')),
     path('quiz', include('frontend.urls')),
     path('photo', include('frontend.urls')),
-    path('result', include('frontend.urls'))
+    path('result', include('frontend.urls')),
+    path('recommend', include('recommend.urls')),
+    path('admin', admin.site.urls),
+
 ]
