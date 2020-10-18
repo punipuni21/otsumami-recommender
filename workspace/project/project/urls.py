@@ -24,7 +24,8 @@ urlpatterns = [
     path('result', include('frontend.urls')),
     path('recommend', include('frontend.urls')),
     path('new', include('frontend.urls')),
-
+    path('MLapp', include('MLapp.urls')),
+    path('showimage/', include('MLapp.urls')),
 
     path('admin/', admin.site.urls),
 ]
