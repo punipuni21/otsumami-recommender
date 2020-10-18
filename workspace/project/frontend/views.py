@@ -104,7 +104,7 @@ def get_similarities(samePersonList, target_data):# ( list[dict], list[dict] )
                     distanceList.append(pow(distance, 2))
         similarities.append([j, 1/(1+np.sqrt(sum(distanceList)))])
 
-    return sorted(similarities, key=lambda s: s[1], reverse=True)
+    return sorted(similarities, key=lambda s: s[1], reverse=True) 
     #return similarities
 
 
