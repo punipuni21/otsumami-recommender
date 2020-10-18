@@ -1,0 +1,8 @@
+<h1>{{sameperson}}</h1>
+
+{% for item, similarities in data %}
+<p>
+    {{forloop.counter}}位:{{item}}
+</p>
+
+{% endfor %}
