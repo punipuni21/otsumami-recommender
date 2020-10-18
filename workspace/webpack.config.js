@@ -16,8 +16,13 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {},
       }
-    ]
+    ],
   },
   /* webpack-dev-server 用*/
   entry: {
