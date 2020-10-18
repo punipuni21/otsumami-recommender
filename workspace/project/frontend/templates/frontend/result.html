@@ -9,6 +9,7 @@
   <link href="{% static 'frontend/construct/materialize/css/bootstrap.css' %}" type="text/css" rel="stylesheet"
     media="screen,projection" />
   <link rel="stylesheet" href="{% static 'frontend/construct/mystyle.css' %}">
+  <link rel="stylesheet" href="{% static 'frontend/construct/result.css' %}">
 
   <title>hello!</title>
 </head>
@@ -36,9 +37,20 @@
   <div>
     <section class="section">
       <div class="container">
-        <div id="app">
-          <!-- React -->
+        <div class="tsumami">
+          <div class="tsumami_top">
+            <h2>あなたの今日のおつまみは……</h2>
+            <img src="{% static 'frontend/img/slide/yakitori.jpg' %}">
+            <h2>タコ刺！！！</h2>
+            <br>
+            <p>アサヒスーパードライにぴったりな、和食で生物のおつまみです。<br>
+              <br>
+              タコの刺身の他に、以下の食材もおすすめです。<br>
+              タコの刺身が苦手だったり、他のおつまみも併せて食べたい時は参考にしてみてください。</p>
+
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -50,32 +62,20 @@
     </p>
 
 
-    <div id="howto" class="howtouse">
-      <h1>HOW TO USE</h1>
-      <h2>使い方</h2>
-      <ul class="demo">
-        <li>①お酒の写真を撮って…… <br />
-          <img src="{% static 'frontend/img/top/demo.png' %}" /></li>
-        <li>②n問の質問に答えるだけ！<br />
-          <img src=" {% static 'frontend/img/top/quest.png' %}" /></li>
-      </ul>
-      <br />
 
+    <div class="footer">
+      <div class="infooter">
+        <a href="#">
+          <p>©️otsumami recomender</p>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="footer">
-    <div class="infooter">
-      <a href="#">
-        <p>©️otsumami recomender</p>
-      </a>
-    </div>
-  </div>
 
-  <script src="{% static 'frontend/main.js' %}"></script>
-  <script src="{% static 'frontend/construct/materialize/js/bootstrap.min.js' %}"></script>
-  <script src="{% static 'frontend/construct/mystyle.js' %}"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="https://kit.fontawesome.com/a4e775296c.js" crossorigin="anonymous"></script>
+    <script src="{% static 'frontend/main.js' %}"></script>
+    <script src="{% static 'frontend/construct/materialize/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'frontend/construct/mystyle.js' %}"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a4e775296c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
