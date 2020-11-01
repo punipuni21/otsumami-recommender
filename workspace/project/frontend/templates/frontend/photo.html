@@ -18,7 +18,7 @@
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand">Otsumami-Recommender</a>
+          <a href="/" class="navbar-brand">Otsumami-Recommender</a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -33,43 +33,12 @@
       </div>
     </div>
   </header>
-  <div class="back bgmask">
-    <section class="section">
-      <div class="container">
-        <div id="app">
-          <!-- React -->
-        </div>
-      </div>
-    </section>
-
-    <p id="pageTop">
-      <a href="#">
-        <i class="fas fa-arrow-up"></i><br />
-        Top
-      </a>
-    </p>
-
-
-    <div id="howto" class="howtouse">
-      <h1>HOW TO USE</h1>
-      <h2>使い方</h2>
-      <ul class="demo">
-        <li>①お酒の写真を撮って…… <br />
-          <img src="{% static 'frontend/img/top/demo.png' %}" /></li>
-        <li>②n問の質問に答えるだけ！<br />
-          <img src=" {% static 'frontend/img/top/quest.png' %}" /></li>
-      </ul>
-      <br />
-
+  <section>
+    <div class="camera_error">
+      <h3>Sorry...</h3>
+      <p>SSH接続をしていないため、カメラ機能はまだ使えません。</p>
     </div>
-  </div>
-  <div class="footer">
-    <div class="infooter">
-      <a href="#">
-        <p>©️otsumami recomender</p>
-      </a>
-    </div>
-  </div>
+  </section>
 
 
   <script src="{% static 'frontend/main.js' %}"></script>

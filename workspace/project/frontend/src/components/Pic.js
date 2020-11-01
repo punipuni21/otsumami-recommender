@@ -11,7 +11,6 @@ class Pic extends React.Component {
         </ul>
         <div>sake photo……</div>
         <button>画像を送る</button> */}
-あ
 
       </div>
     );
