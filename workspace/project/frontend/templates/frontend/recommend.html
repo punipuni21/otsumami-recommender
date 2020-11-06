@@ -41,19 +41,18 @@
                     <div class="tsumami_top">
                         <h2>あなたの今日のおつまみは……</h2>
                         <img src="{% static 'frontend/img/result/salad.jpg' %}">
-                        <h2>サラダ！！！</h2>
+                        <h2>{{1位}}！！！</h2>
                         <br>
-                        <p>アサヒスーパードライにぴったりな、野菜のおつまみです。<br>
+                        <p>{{酒の種類}}にぴったりな、{{1位}}です。<br>
                             <br>
                             サラダの他に、以下の食材もおすすめです。<br>
                             サラダが苦手だったり、他のおつまみも併せて食べたい時は参考にしてみてください。</p>
 
                     </div>
-                    <h1>{{sameperson}}</h1>
 
                     {% for item, similarities in data %}
                     <p>
-                        {{forloop.counter}}位:{{item}}
+                        {{forloop.counter}}位:{{item}}【ポイント】: {{similarities}}
                     </p>
 
                     {% endfor %}

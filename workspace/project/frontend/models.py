@@ -4,7 +4,7 @@ class Quiz(models.Model):
     kindSake = models.IntegerField()
     firstfeeling = models.IntegerField()
     secondfeeling = models.IntegerField()
-    sex = models.IntegerField()
+    thirdfeeling = models.IntegerField()
 
 # Create your models here.
 class Sample(models.Model):
@@ -18,7 +18,7 @@ class Sample(models.Model):
     #=================以下酒パラメータ=================
     beer = models.IntegerField(default=1)
     weakTyuhi = models.IntegerField(default=1)  
-    mediumYyuhi = models.IntegerField(default=1)
+    mediumTyuhi = models.IntegerField(default=1)
     strongTyuhi = models.IntegerField(default=1)
     wisky = models.IntegerField(default=1)
     spirits = models.IntegerField(default=1)
@@ -30,14 +30,14 @@ class Sample(models.Model):
     shoTyu = models.IntegerField(default=1)
     #=================以下野菜・肉・魚介=================
     saladkei = models.IntegerField(default=1)
-    yasaisutelikku = models.IntegerField(default=1)
+    yasaisuteliikku = models.IntegerField(default=1)
     otukemono = models.IntegerField(default=1)
     kimuchi = models.IntegerField(default=1)
     rakkyou = models.IntegerField(default=1)
     ume = models.IntegerField(default=1)
     edamame = models.IntegerField(default=1)
     saladchiken = models.IntegerField(default=1)
-    winnner = models.IntegerField(default=1)
+    winner = models.IntegerField(default=1)
     bacon = models.IntegerField(default=1)
     smoketang = models.IntegerField(default=1)
     namahamu = models.IntegerField(default=1)
